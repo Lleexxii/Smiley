@@ -36,7 +36,7 @@ this.onPublicEventMessage = function(publicEventMessage) {};
 this.onPrivateMessage = function(privateMessage) {};
 this.onAppEventReceived = function(appInstance, type, data) {};
 this.onEventReceived = function (user, type, data) {};
-this.onUserDiced = function(diceEvent) {};
+//this.onUserDiced = function(diceEvent) {};
 this.onBeforeKnuddelReceived = function(knuddelTransfer) {};
 this.onKnuddelReceived = function(sender, receiver, knuddelAmount, transferReason) {};
 this.onAccountReceivedKnuddel = function(sender, receiver, knuddelAmount, transferReason, knuddelAccount) {};
@@ -44,6 +44,18 @@ this.onAccountChangedKnuddelAmount = function(user, knuddelAccount, oldKnuddelAm
 
 this.chatCommands = {
 HelpMe: function(user, cmd) {},
+Interface: function(user, params, cmd) {},
+Toplist: function(user, value, cmd) {},
+Konto: function(user, params, cmd) {},
+Greeting: function(user, params, value, cmd) {},
+Newsletters: function(user, params, value, cmd) {},
+Bot: function(user, params, value, cmd) {},
+Topic: function(user, params, value, cmd) {},
+AppConfig: function(user, cmd) {},
+AppUpdate: function(user, cmd) {},
+AppInfo: function(user, cmd) {},
+AppStats: function(user, cmd) {},
+AppRestart: function(user, cmd) {},
 };
 
 }());
