@@ -45,17 +45,25 @@ this.onAccountChangedKnuddelAmount = function(user, knuddelAccount, oldKnuddelAm
 this.chatCommands = {
 HelpMe: function(user, cmd) {},
 Interface: function(user, params, cmd) {},
+// /Börse [Buy/Sell/Trade/Rent] [Smiley/Feature] [Syntax]
+
+// /Buy [Smiley/Feature] [Syntax] [Give]
+// /Sell [Smiley/Feature] [Syntax] [Give]
+// /Trade [Smiley/Feature] [Syntax] [Want]
+// /Rent [Smiley/Feature] [Syntax] [Give]
+Börse: function(user, params, object, syntax, action, cmd) {},
 Toplist: function(user, value, cmd) {},
 Konto: function(user, params, cmd) {},
-Greeting: function(user, params, value, cmd) {},
+Welcome: function(user, params, value, cmd) {},
 Newsletters: function(user, params, value, cmd) {},
+Spam: function(user, params, mode, timer, value, cmd) {},
 Bot: function(user, params, value, cmd) {},
 Topic: function(user, params, value, cmd) {},
-AppConfig: function(user, cmd) {},
-AppUpdate: function(user, cmd) {},
+Config: function(user, params, value, cmd) {},
+Update: function(user, cmd) {},
 AppInfo: function(user, cmd) {},
 AppStats: function(user, cmd) {},
-AppRestart: function(user, cmd) {},
+AppUpdate: function(user, cmd) {},
 };
 
 }());
