@@ -1,19 +1,19 @@
-userBot                     = KnuddelsServer.getDefaultBotUser(); App Bot wird hier definiert.
+userBot                     = KnuddelsServer.getDefaultBotUser(); // Definition: Bot
 
-appPersistence              = KnuddelsServer.getPersistence();
+appPersistence              = KnuddelsServer.getPersistence(); // Definition: Persistence
 
-appAccess                   = KnuddelsServer.getAppAccess();
-appProfileEntryAccess       = KnuddelsServer.getAppProfileEntryAccess();
+appAccess                   = KnuddelsServer.getAppAccess(); // Definition: App Access
+appProfileEntryAccess       = KnuddelsServer.getAppProfileEntryAccess(); // Definition: App Profil Entry Access
 
-userAccess                  = KnuddelsServer.getUserAccess();
+userAccess                  = KnuddelsServer.getUserAccess(); // Definition: User Access
 
-channel                     = KnuddelsServer.getChannel();
-channelConfiguration        = channel.getChannelConfiguration();
-channelRights               = channelConfiguration.getChannelRights();
-channelInformation          = channelConfiguration.getChannelInformation();
-channelModerators           = channelRights.getChannelModerators();
+channel                     = KnuddelsServer.getChannel(); // Definition: Channel
+channelConfiguration        = channel.getChannelConfiguration(); // Definition: Channel Configuration
+channelRights               = channelConfiguration.getChannelRights(); // Definition: Channel Rights
+channelInformation          = channelConfiguration.getChannelInformation(); // Definition: Channel Information
+channelModerators           = channelRights.getChannelModerators(); // Definition: Channel Moderators
 
-toplistAccess               = KnuddelsServer.getToplistAccess();
+toplistAccess               = KnuddelsServer.getToplistAccess(); // Definition: Toplist Access
 
 
 var App = (new function () {
