@@ -2,8 +2,12 @@ userBot                     = KnuddelsServer.getDefaultBotUser(); // Definition:
 
 appPersistence              = KnuddelsServer.getPersistence(); // Definition: Persistence
 
-appAccess                   = KnuddelsServer.getAppAccess(); // Definition: App Access
 appProfileEntryAccess       = KnuddelsServer.getAppProfileEntryAccess(); // Definition: App Profil Entry Access
+
+appAccess                   = KnuddelsServer.getAppAccess(); // Definition: App Access
+ownInstance                 = KnuddelsServer.getAppAccess().getOwnInstance(); // Definition: Own Instance
+rootInstance                = ownInstance.getRootInstance(); // Definition: Root Instance
+appInfo                     = ownInstance.getAppInfo(); // Definition: App Info
 
 userAccess                  = KnuddelsServer.getUserAccess(); // Definition: User Access
 
@@ -30,8 +34,16 @@ this.mayShowPublicActionMessage = function(publicActionMessage) {};
 this.onPublicActionMessage = function(publicActionMessage) {};
 this.onPublicEventMessage = function(publicEventMessage) {};
 this.onPrivateMessage = function(privateMessage) {};
+this.onAppEventReceived = function(appInstance, type, data) {};
 this.onEventReceived = function (user, type, data) {};
+this.onUserDiced = function(diceEvent) {};
+this.onBeforeKnuddelReceived = function(knuddelTransfer) {};
 this.onKnuddelReceived = function(sender, receiver, knuddelAmount, transferReason) {};
-this.chatCommands = {};
+this.onAccountReceivedKnuddel = function(sender, receiver, knuddelAmount, transferReason, knuddelAccount) {};
+this.onAccountChangedKnuddelAmount = function(user, knuddelAccount, oldKnuddelAmount, newKnuddelAmount) {};
+
+this.chatCommands = {
+HelpMe: function(user, cmd) {},
+};
 
 }());
